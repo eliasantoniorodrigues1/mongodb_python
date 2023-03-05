@@ -48,41 +48,41 @@ i'm using mongodb Compass
 ### Quering data
 
         # find one
-    x = mycol.find_one()
-    print(x)
-
-    # find all - it retunrs an iterable
-    x = mycol.find()
-    for data in x:
-        print(data)
-
-    # filtering return
-    for data in mycol.find(), {'name': 'Quedma'}:
-        print(data)
-
-    # quering data
-    myquery = {'name': 'Quedma'}
-    # returns a generator
-    mydoc = mycol.find(myquery)
-
-    for data in mydoc:
-        print(data)
-
-    # advanced query: using modifiers
-    # $gt = greater than
-    # $sort, $position, $slice, $push, $each, $addToSet
-    myquery2 = {'name': {'$gt': 'Q'}}
-    mydoc = mycol.find(myquery2)
-    print('='* 60)
-    for x in mydoc:
+        x = mycol.find_one()
         print(x)
 
-    # filtering with regular expressions
-    myquery3 = {'name': {'$regex': '^[Kk]'}}
-    mydoc = mycol.find(myquery3)
-    print('*' * 60)
-    for x in mydoc:
-        print(x)
+        # find all - it retunrs an iterable
+        x = mycol.find()
+        for data in x:
+                print(data)
+
+        # filtering return
+        for data in mycol.find(), {'name': 'Quedma'}:
+                print(data)
+
+        # quering data
+        myquery = {'name': 'Quedma'}
+        # returns a generator
+        mydoc = mycol.find(myquery)
+
+        for data in mydoc:
+                print(data)
+
+        # advanced query: using modifiers
+        # $gt = greater than
+        # $sort, $position, $slice, $push, $each, $addToSet
+        myquery2 = {'name': {'$gt': 'Q'}}
+        mydoc = mycol.find(myquery2)
+        print('='* 60)
+        for x in mydoc:
+                print(x)
+
+        # filtering with regular expressions
+        myquery3 = {'name': {'$regex': '^[Kk]'}}
+        mydoc = mycol.find(myquery3)
+        print('*' * 60)
+        for x in mydoc:
+                print(x)
 
 
 ### Sorting data
