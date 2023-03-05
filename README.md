@@ -172,4 +172,10 @@ i'm using mongodb Compass
           print(x)
 
 
-*Fonte:* [W3School](https://www.w3schools.com/python/python_mongodb_getstarted.asp)
+*Fonte:* 
+
+HowTO:
+ - [W3School](https://www.w3schools.com/python/python_mongodb_getstarted.asp)
+
+Installation:
+ - [PrismaIO](https://www.prisma.io/dataguide/mongodb/setting-up-a-local-mongodb-database)
